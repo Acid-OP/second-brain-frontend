@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "Client/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "zeroConfig": false,
+          "distDir": "Client/dist",
+          "buildCommand": "cd Client && npm install && npm run build"
+        }
+      },
+      {
+        "src": "Server/index.ts",
+        "use": "@vercel/node",
+        "config": {
+          "includeFiles": ["Server/**"]
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/v1/(.*)",
+        "dest": "/Server/index.ts"
+      },
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/Client/dist/$1"
+      }
+    ]
+  }
