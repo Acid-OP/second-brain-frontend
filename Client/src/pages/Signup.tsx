@@ -7,6 +7,7 @@ import welcome from "../iconImages/welcome.png";
 import { motion } from "framer-motion";
 import { SignupInput } from "../components/SignupInput";
 import { SignUpIconcomponent, SignUpIconcomponent2 } from "../components/SignupiconComponent";
+import { BACKEND_URL } from "../config";
 import { z } from "zod";
 
 const signupSchema = z.object({
@@ -30,8 +31,6 @@ export function Signup() {
   const navigate = useNavigate();
   const [errors, setErrors] = useState<{ username?: string; password?: string; general?: string }>({});
 
-  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
-
   async function signup() {
     const username = usernameRef.current?.value || "";
     const password = passwordRef.current?.value || "";
@@ -48,7 +47,6 @@ export function Signup() {
       setErrors(errorMap);
       return;
     }
-
     try {
       await axios.post(`${BACKEND_URL}/api/v1/signup`, {
         username,
