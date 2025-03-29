@@ -73,7 +73,7 @@ export function CreateContentModal({ open, onClose, onContentAdded }: CreateCont
       descriptionRef.current.value = "";
       onClose(); 
 
-      const response = await axios.post(
+      await axios.post(
         `${BACKEND_URL}/api/v1/content`,
         { link, title, type, description },
         { headers: { Authorization: `Bearer ${token}` } }
