@@ -16,12 +16,15 @@ export function NavbarIconcomponent2({ src, alt, className }: NavbarIconProps) {
     </div>
   );
 }
+interface HeroProps {
+  className?: string;
+}
 
-export function Hero() {
+export function Hero({ className = "" }: HeroProps) {
   return (
-    <div className="relative">
+    <div className={`relative ${className}`}>
       {/* Hero Section */}
-      <div className="relative h-screen bg-gray-50 overflow-y-hidden">
+      <div className="relative h-[calc(100vh-4rem)] bg-gray-50 overflow-y-hidden">
         {/* Main Content - Centered */}
         <div className="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
           <motion.div
