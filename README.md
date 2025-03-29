@@ -13,7 +13,19 @@
 ## ✨ Key Features
 
 Second Brain is an intelligent knowledge management platform that helps you store, organize, and retrieve important content from various platforms using AI-powered embeddings. Think of it as your external memory bank for digital content.
+---
+## 📂 Project Repositories
 
+This project is split into two repositories for better separation of concerns:
+
+### 🖥️ Frontend (Client)
+```bash
+https://github.com/Acid-OP/second-brain-frontend
+```
+###⚙️ Backend (Server)
+```bash
+https://github.com/Acid-OP/second-brain-backend
+```
 ## 🌟 Key Features
 
 ### 🗄️ Smart Content Storage
