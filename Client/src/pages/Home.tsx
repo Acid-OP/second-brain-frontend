@@ -27,7 +27,7 @@ export function Home() {
         scrollToSection={scrollToSection}
         refs={{ dashboardRef, featuresRef }} // Updated ref name
       />
-      <Hero className="pt-16 md:pt-0" />
+      <Hero />
 
       {/* Dashboard Section */}
       <motion.section

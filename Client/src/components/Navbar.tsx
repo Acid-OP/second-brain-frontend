@@ -8,7 +8,7 @@ interface NavbarProps {
     scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
     refs: {
         dashboardRef: React.RefObject<HTMLDivElement>;
-        featuresRef: React.RefObject<HTMLDivElement>; // Updated from queryRef
+        featuresRef: React.RefObject<HTMLDivElement>;
     };
 }
 
@@ -18,7 +18,7 @@ export function Navbar({ scrollToSection, refs }: NavbarProps) {
 
     return (
         <motion.div
-            className="pt-4"
+            className="pt-4 mb-6 sm:mb-0" // Added mb-6 for mobile, reset to 0 at sm breakpoint
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
