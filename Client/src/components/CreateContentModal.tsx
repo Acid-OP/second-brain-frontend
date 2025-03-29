@@ -78,12 +78,10 @@ export function CreateContentModal({ open, onClose, onContentAdded }: CreateCont
         { link, title, type, description },
         { headers: { Authorization: `Bearer ${token}` } }
       );
-
-      console.log("[DEBUG] Content added:", response.data);
       if (onContentAdded) onContentAdded();
     } catch (error: any) {
-      console.error("[ERROR] Error adding content:", error.response?.data || error.message);
-      setError(`Failed to add content: ${error.response?.data?.message || error.message}`);
+      console.error("[ERROR] Error adding content:", error.message);
+      setError(`Failed to add content: ${error.message}`);
       setTimeout(() => setError(null), 2000); // Clear error after 2s
     }
   }
