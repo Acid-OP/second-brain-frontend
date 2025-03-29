@@ -126,6 +126,7 @@ export function Signin() {
                 <SignupInput
                   reference={passwordRef}
                   placeholder="Password"
+                  type="password"
                   className="text-center px-4 py-2 text-lg border border-gray-300 rounded-lg focus:outline-none focus:border-[#7950f2] transition-all duration-200 max-[640px]:text-sm max-[640px]:px-4 max-[640px]:py-1.5"
                 />
                 {errors.password && <div className="mt-1 text-red-500 text-sm text-center max-[640px]:text-xs">{errors.password}</div>}
