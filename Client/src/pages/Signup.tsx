@@ -61,7 +61,6 @@ export function Signup() {
 
   return (
     <div className="flex flex-col min-h-screen w-screen bg-gray-50">
-      {/* Top: Enhanced Header */}
       <div className="flex flex-col items-center pt-2 ">
         <motion.div
           className="flex items-center gap-2 max-[640px]:gap-2"

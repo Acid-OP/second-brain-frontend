@@ -7,7 +7,6 @@ export function NavbarTextComponent({ title }: { title: string }) {
     );
 }
 
-
 export function NavbarIconComponent({src , alt}:{src:string ; alt?:string}){
     return(
         <div>

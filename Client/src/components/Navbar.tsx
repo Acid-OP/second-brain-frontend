@@ -8,7 +8,7 @@ interface NavbarProps {
     scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
     refs: {
         dashboardRef: React.RefObject<HTMLDivElement>;
-        featuresRef: React.RefObject<HTMLDivElement>; // Updated from queryRef
+        featuresRef: React.RefObject<HTMLDivElement>; 
     };
 }
 
@@ -33,13 +33,9 @@ export function Navbar({ scrollToSection, refs }: NavbarProps) {
                             onClick={() => navigate("/")}
                         />
                     </div>
-
-                    {/* Center: Navigation Links (Desktop) */}
                     <div className="hidden md:flex items-center justify-center flex-1">
                         <TopBarComp scrollToSection={scrollToSection} refs={refs} />
                     </div>
-
-                    {/* Right: Auth + Mobile Toggle */}
                     <div className="flex items-center justify-end flex-1 gap-4">
                         {token ? "" : <TopBarSignin />}
                     </div>

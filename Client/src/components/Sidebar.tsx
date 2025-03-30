@@ -15,7 +15,6 @@ import { LogoutText } from "./LogoutButton";
 import { QueryInput } from "./QuerySection";
 import axios from "axios";
 
-// Helper function for responsive sidebar width
 const getSidebarWidth = (open: boolean) => {
   const width = window.innerWidth;
   if (width < 640) {

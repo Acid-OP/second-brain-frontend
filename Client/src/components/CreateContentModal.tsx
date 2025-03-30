@@ -82,7 +82,7 @@ export function CreateContentModal({ open, onClose, onContentAdded }: CreateCont
     } catch (error: any) {
       console.error("[ERROR] Error adding content:", error.message);
       setError(`Failed to add content: ${error.message}`);
-      setTimeout(() => setError(null), 2000); // Clear error after 2s
+      setTimeout(() => setError(null), 2000); 
     }
   }
 

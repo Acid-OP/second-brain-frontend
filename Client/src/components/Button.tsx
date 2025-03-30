@@ -18,7 +18,7 @@ const variantClasses = {
   sidebar: "bg-white text-gray-700 hover:bg-gray-50",
 };
 
-// Responsive styles with base for lg and above, scaling down for md and sm
+
 const defaultStyles =
   "px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-sm sm:text-base md:text-md rounded-lg flex items-center gap-2 transition-all duration-300 ease-in-out group relative overflow-hidden";
 
@@ -39,7 +39,6 @@ export function Button({
       } ${loading ? "opacity-50 cursor-not-allowed" : ""} ${className || ""}`}
       disabled={loading}
     >
-      {/* Background layer that moves upward on hover */}
       <span className="absolute inset-0 bg-inherit rounded-lg transition-transform duration-300 ease-in-out group-hover:-translate-y-1 group-active:scale-95 z-0" />
       
       {/* Content stays stationary */}

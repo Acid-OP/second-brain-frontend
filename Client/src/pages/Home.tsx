@@ -2,12 +2,12 @@ import React, { useRef } from "react";
 import { Hero } from "../components/Hero";
 import { Navbar } from "../components/Navbar";
 import { motion } from "framer-motion";
-import dashboardImage1 from "../iconImages/dashboardimage2.png"; // General dashboard with cards
-import dashboardImage2 from "../iconImages/dashboardimage3.png"; // Highlighting a card (formerly queryImage)
+import dashboardImage1 from "../iconImages/dashboardimage2.png"; 
+import dashboardImage2 from "../iconImages/dashboardimage3.png"; 
 
 export function Home() {
   const dashboardRef = useRef<HTMLDivElement>(null);
-  const featuresRef = useRef<HTMLDivElement>(null); // Renamed from queryRef
+  const featuresRef = useRef<HTMLDivElement>(null); 
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref.current) {
@@ -25,7 +25,7 @@ export function Home() {
     <div className="flex flex-col bg-gray-50 min-h-screen w-full">
       <Navbar
         scrollToSection={scrollToSection}
-        refs={{ dashboardRef, featuresRef }} // Updated ref name
+        refs={{ dashboardRef, featuresRef }} 
       />
       <Hero />
 
@@ -110,13 +110,12 @@ export function Home() {
         </div>
       </motion.section>
 
-      {/* Spacer */}
       <div className="py-12 bg-gray-50"></div>
 
       {/* Features Section */}
       <motion.section
-        ref={featuresRef} // Updated ref name
-        id="features" // Updated ID
+        ref={featuresRef} 
+        id="features" 
         className="py-12 px-6 bg-gray-50 flex flex-col items-center justify-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -140,7 +139,7 @@ export function Home() {
           viewport={{ once: true }}
         >
           <img
-            src={dashboardImage1} // Updated image name
+            src={dashboardImage1} 
             alt="Key Features in Second Brain"
             className="w-full h-auto rounded-xl shadow-xl border-2 border-[#7950f2] hover:border-[#5e3fd6] transition-all duration-300"
           />

@@ -18,7 +18,7 @@ export function HeroButton() {
             className="flex justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }} // Added animation to match hero section
+            transition={{ duration: 0.8, delay: 1 }} 
         >
             {token ?(            <button
                 onClick={DirectToDashboard}

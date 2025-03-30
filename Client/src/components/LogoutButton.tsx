@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import { motion } from "framer-motion";
 
-// Adjusted LogoutText to match your provided version
+
 export function LogoutText({ title }: { title: string }) {
   return (
     <span className="text-lg sm:text-xl md:text-xl lg:text-2xl font-medium tracking-tight">
@@ -45,7 +45,6 @@ export function LogoutButton({
       onClick={onClick}
       disabled={loading}
     >
-      {/* Start Icon and Text */}
       {startIcon && (
         <div className="flex items-center gap-1 sm:gap-1 md:gap-2 lg:gap-2">
           {startIcon}
@@ -56,7 +55,6 @@ export function LogoutButton({
           )}
         </div>
       )}
-      {/* Text Only (if no startIcon) */}
       {!startIcon && (
         <span className="text-xs sm:text-sm md:text-sm lg:text-base">
           {loading ? "Loading..." : text}

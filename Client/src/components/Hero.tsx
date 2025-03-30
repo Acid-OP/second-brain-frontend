@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import brain2 from "../iconImages/brain2.png";
 import { HeroButton } from "./HeroButton";
 
-// Define interface for NavbarIconcomponent props
+
 interface NavbarIconProps {
   src: string;
   alt?: string;
@@ -22,7 +22,6 @@ export function Hero() {
     <div className="relative">
       {/* Hero Section */}
       <div className="relative h-screen bg-gray-50 overflow-y-hidden">
-        {/* Main Content - Centered */}
         <div className="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0 }}
@@ -69,7 +68,7 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Enhanced Shapes */}
+        {/* Shapes */}
         <div className="absolute inset-0 pointer-events-none">
           <motion.div
             className="absolute top-[10%] left-[30%] transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full shadow-lg opacity-70 max-[640px]:w-8 max-[640px]:h-8 max-[640px]:top-[5%] max-[640px]:left-[10%]"

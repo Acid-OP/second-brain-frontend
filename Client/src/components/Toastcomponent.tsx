@@ -12,7 +12,7 @@ export function Toast({ message, duration = 3000, onClose }: ToastProps) {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setVisible(false); // Trigger exit animation
+      setVisible(false); 
     }, duration);
 
     return () => clearTimeout(timer);
