@@ -4,7 +4,7 @@
        width="40">
 </div>
 
-# Second Brain 🧠 - Your AI-Powered Knowledge Vault
+# Second Brain 🧠 - Your AI-Powered Knowledge Vault.
 
 > **Never lose an important link again** - Store, organize and instantly retrieve your saved content from Twitter, YouTube, Reddit and more using intelligent embeddings.
 
