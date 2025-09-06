@@ -124,7 +124,7 @@ export function CreateContentModal({ open, onClose, onContentAdded }: CreateCont
             />
             <Input
               reference={linkRef}
-              placeholder="Link"
+              placeholder="Link (Copy URL from browser address bar (privacy protection))"
               className="w-full border-gray-300 focus:border-[#7950f2] focus:ring-[#7950f2] transition-all duration-200"
             />
             <Input
