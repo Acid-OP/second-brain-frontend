@@ -18,7 +18,7 @@ export function Home() {
   const cardHover = {
     y: -5,
     scale: 1.02,
-    transition: { duration: 0.2, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.2 },
   };
 
   return (
