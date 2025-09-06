@@ -21,7 +21,7 @@ export function Hero() {
   return (
     <div className="relative">
       {/* Hero Section */}
-      <div className="relative h-screen bg-gray-50 overflow-y-hidden">
+      <div className="relative h-screen bg-gray-50 overflow-hidden">
         <div className="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0 }}

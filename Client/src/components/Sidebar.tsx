@@ -76,9 +76,9 @@ export function Sidebar({
           variant="sidebar"
           startIcon={
             open ? (
-              <X className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" />
+              <X className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-5 lg:h-5 cursor-pointer" />
             ) : (
-              <Menu className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" />
+              <Menu className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-5 lg:h-5 cursor-pointer" />
             )
           }
           className={`bg-white text-gray-700 py-1.5 sm:py-2 md:py-2 lg:py-2.5 px-2 sm:px-2 md:px-3 lg:px-3 rounded-sm sm:rounded-md md:rounded-md lg:rounded-md hover:bg-gray-100 hover:text-[#7950f2] transition-all duration-200 ${open ? "self-start" : "self-center"}`}
